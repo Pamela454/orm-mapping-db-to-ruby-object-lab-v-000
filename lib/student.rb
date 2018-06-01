@@ -121,7 +121,6 @@ class Student
       FROM students
       WHERE grade = (grade)
       ORDER BY students.id
-      LIMIT 1
     SQL
 
     DB[:conn].execute(sql).map do |row|
