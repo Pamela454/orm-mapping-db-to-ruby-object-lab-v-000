@@ -15,6 +15,8 @@ class Student
     SELECT *
     FROM songs
     SQL
+
+    DB[:conn].execute
     self.new_from_db(row)
     # retrieve all the rows from the "Students" database
     # remember each row should be a new instance of the Student class
