@@ -27,7 +27,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE name = ?
+      WHERE name = (name)
       LIMIT 1
     SQL
     # find the student in the database given a name
